@@ -1,0 +1,416 @@
+@keyframes hideeverything {
+}
+
+/* html {
+        background-color: rgb(0, 0, 0);
+        animation: htmlzooming 3s 1.1s;
+        z-index: 5;
+    } */
+
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome
+}
+body {
+  animation: zooming 3s 1.1s;
+}
+
+* {
+  /* background-color: rgb(0, 0, 0); */
+  color: #e50914;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* div {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        position: relative;
+        top: 45vh;
+        height: 0vh;
+        z-index: -1;
+
+
+    } */
+
+#logoY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25%;
+  position: relative;
+  animation: htmlzooming 3s 1.1s;
+  transform: scale(90%);
+}
+
+#danger {
+  z-index: -20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(180%) scaleY(6000%);
+}
+
+@keyframes colorchange {
+  100% {
+    stroke: #000000;
+  }
+}
+
+.fakeline {
+  stroke: rgb(255, 0, 0);
+  filter: brightness(1) contrast(10) blur(3);
+  stroke-width: 50;
+  animation: fakeline 1s ease 2s, colorchange 50s 0.3s;
+}
+
+.firstline {
+  stroke: #de1822;
+
+  stroke-width: 50;
+  animation: translateCon1 1s ease 1.3s, fullzooming 4s 2s;
+}
+
+.secondline {
+  stroke: #970308;
+  stroke-width: 50;
+  animation: fullzooming 4s 2s;
+}
+
+.thirdline {
+  stroke: #970308;
+  stroke-width: 50;
+  animation: fullzooming 4s 2s;
+}
+
+.fakecon4 {
+  filter: drop-shadow(3px 5px 50px #c80202);
+}
+
+.fakecon {
+  filter: drop-shadow(3px 5px 50px #f2ff01);
+}
+
+.fakecon2 {
+  filter: drop-shadow(3px 5px 50px #0044ff);
+}
+
+.fakecon3 {
+  filter: drop-shadow(3px 5px 50px #0502c8);
+}
+
+.fakecon5 {
+  filter: drop-shadow(3px 5px 50px #ef4c4c);
+}
+
+.fakecon6 {
+  filter: drop-shadow(3px 5px 50px #fffb00);
+}
+
+.fakecon7 {
+  filter: drop-shadow(3px 5px 50px #eeff00);
+}
+
+.fakecon8 {
+  filter: drop-shadow(3px 5px 50px #ff0101);
+}
+
+#fakeline {
+  animation: fakeline 2s ease 2s;
+}
+
+#fakeline2 {
+  animation: fakeline2 2s ease 2s;
+}
+
+#fakeline3 {
+  animation: fakeline3 2s ease 2s;
+}
+
+#fakeline4 {
+  animation: fakeline4 2s ease 2s;
+}
+
+#fakeline5 {
+  animation: fakeline5 2s ease 2s;
+}
+
+#fakeline6 {
+  animation: fakeline6 2s ease 2s;
+}
+
+#fakeline7 {
+  animation: fakeline7 2s ease 2s;
+}
+
+#fakeline8 {
+  animation: fakeline8 2s ease 2s;
+}
+
+@keyframes changeconcolor {
+  100% {
+    filter: drop-shadow(3px 5px 100px #ff5050);
+  }
+}
+@keyframes changefilter {
+  0% {
+    filter: drop-shadow(3px 5px 10px rgb(4, 0, 255));
+  }
+  100% {
+    filter: drop-shadow(3px 5px 10px rgb(255, 0, 0));
+  }
+}
+
+#fakecontainer {
+  border-bottom-left-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: introComing 0s cubic-bezier(0.29, 0.27, 0.55, 0.51) 0.66s,
+    opacity 2s, zooming 0s, translateCon1 1s ease 2s,
+    fullzooming 2s ease-in-out 2s, fullzooming2 2s ease-in-out 3s,
+    dropshadow 2.2s, changeconcolor 2s 0.5s, opacity3 3s 5s infinite;
+}
+
+#container1 {
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 10px;
+  animation: introComing 0s cubic-bezier(0.29, 0.27, 0.55, 0.51) 0.66s,
+    opacity 0.6s, zooming 0s, translateCon1 1s ease 1.5s, fullzooming 1s 2s,
+    opacity2 1s 2s, opacity3 4s 2.9s infinite;
+}
+
+#container2 {
+  position: relative;
+  bottom: 90px;
+  right: 2px;
+  transform: rotate(25deg);
+  border-radius: 1px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 5px;
+  z-index: 2;
+  animation: introComing 0.22s cubic-bezier(0.29, 0.27, 0.55, 0.51) 0.66s,
+    opacity 0.66s, zooming 0s, rotateLine 1s ease 1s, translateCon2 1s ease 1.5s,
+    fullzooming 1s ease-in-out 2s, opacity2 1s 2s, opacity3 4s 2.9s infinite;
+}
+
+#container3 {
+  position: relative;
+  bottom: 90px;
+  right: 73px;
+  transform: rotate(-27deg);
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 5px;
+  z-index: -1;
+  animation: introComing 0.33s cubic-bezier(0.29, 0.27, 0.55, 0.51) 0.66s,
+    opacity 0.66s, zooming 0s, rotateLine 1s 1s, translateCon3 1s ease 1.5s,
+    fullzooming 1s ease-in-out 2s, opacity2 1s 2s, opacity3 4s 2.9s infinite;
+}
+
+svg {
+  background-color: rgb(0, 0, 0);
+  filter: drop-shadow(2px 10px 7px rgba(0, 0, 0, 0.4));
+}
+
+/* animation */
+
+@keyframes zooming {
+  100% {
+    transform: scale(100%);
+    transform-origin: 80%;
+
+    border-radius: 0px;
+  }
+}
+
+@keyframes htmlzooming {
+  100% {
+    transform: scale(1.5);
+
+    border-radius: 0px;
+  }
+}
+
+@keyframes fullzooming {
+  from {
+    width: 0.9px;
+    transform: scaleY(110);
+    margin: 0;
+    padding: 0;
+    stroke-width: 2px;
+  }
+
+  to {
+    transform: scaleY(10);
+    margin: 0px;
+    padding: 0;
+    width: 5px;
+  }
+}
+
+@keyframes fullzooming2 {
+  from {
+    transform: scaleY(10);
+    margin: 0;
+    padding: 0;
+    width: 3px;
+  }
+
+  to {
+    transform: scaleY(50);
+    margin: 100px;
+    padding: 0;
+    width: 0px;
+  }
+}
+
+@keyframes introComing {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+
+  to {
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity3 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity2 {
+  from {
+  }
+
+  to {
+    height: 0;
+    width: 0;
+  }
+}
+
+@keyframes rotateLeftLine {
+  from {
+  }
+
+  to {
+    border-radius: 0px;
+    transform: translateY(90px);
+  }
+}
+
+@keyframes translateCon3 {
+  from {
+  }
+
+  to {
+    transform: translateX(22px);
+    border-radius: 0px;
+    filter: none;
+    z-index: -5;
+  }
+}
+
+@keyframes translateCon2 {
+  from {
+  }
+
+  to {
+    transform: translateX(-22px);
+    border-radius: 0px;
+    filter: none;
+    z-index: 1;
+  }
+}
+
+@keyframes translateCon1 {
+  100% {
+    stroke: #970308;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+@keyframes dropshadow {
+  100% {
+    filter: drop-shadow(3px 5px 50px #000000);
+  }
+}
+
+@keyframes fakeline {
+  100% {
+    stroke: #f2ff02;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+@keyframes fakeline2 {
+  100% {
+    stroke: #0044ff;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+@keyframes fakeline3 {
+  100% {
+    stroke: #0502c8;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+@keyframes fakeline4 {
+  100% {
+    stroke: #c80202;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+@keyframes fakeline5 {
+  100% {
+    stroke: #ef4c4c;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+@keyframes fakeline6 {
+  100% {
+    stroke: #fbfb00;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+@keyframes fakeline7 {
+  100% {
+    stroke: #ffff00;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+@keyframes fakeline8 {
+  100% {
+    stroke: #ff0101;
+    border-radius: 0px;
+    z-index: 0;
+  }
+}
+
+/* animation */

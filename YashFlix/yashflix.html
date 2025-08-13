@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a website which is similar to the Netflix (multimedia website)">
+    <meta name="keyword" content="html , css ">
+    <meta name="author" content="Yash Patel">
+
+    <title>Yashflix India - Watch Online Videos</title>
+
+    <link rel="icon" href="faviconnn.ico" type="image/x-icon">
+    <link rel="stylesheet" href="yashflix.css">
+</head>
+
+<body>
+    <!-- Intro container to dynamically load the intro content -->
+    <audio src="intro audio.mp3" autoplay hidden preload="auto"></audio>
+
+    <div id="intro-container"></div>
+
+    <!-- Main website content, hidden initially -->
+    <div id="main-content" style="display: none;">
+        <div>
+            <img src="logo.svg" alt="Yashflix" class="yashflixlogo">
+            <div class="logobgshadow"></div>
+        </div>
+
+        <main>
+            <video src="/content/planecrash.mp4" class="video1" poster="content/thumbnail1.png" muted></video>
+
+            <div class="maintextbox">
+                <text class="mainvideotext3">Trailer</text>
+                <img src="content/curve text.svg" class="maintextboximage">
+                <text class="mainvideotext1">Echoes </text>
+                <text class="mainvideotext2"> of Survival</text>
+                <a href="https://youtu.be/KlGoAtO3xo4?si=VMzYT1racfg45PDw">
+                    <div class="mainvideobutton">▶ Play</div>
+                </a>
+            </div>
+        </main>
+
+        <section class="section1">
+            <!-- JS will dynamically add video cards here -->
+        </section>
+    </div>
+
+    
+
+    <script src="yashflix.js"></script>
+</body>
+
+</html>
+

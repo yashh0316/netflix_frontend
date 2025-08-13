@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.yashflixlogo {
+    z-index: 100;
+    width: 9.9vw;
+    display: inline-block;
+    transform: scale(1.5);
+    position: fixed;
+    bottom: 4.5%;
+    right: 5%;
+    filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.4));
+
+}
+
+.logobgshadow {
+    box-shadow: 0px -10px 70px 70px rgb(0, 0, 0);
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+}
+
+
+.video1 {
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    filter: opacity(60%);
+
+}
+
+
+
+section {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;
+    gap: 5vw;
+    row-gap: 2vw;
+    justify-content: center;
+    position: relative;
+    top: 35vw;
+    box-shadow: 1px -7px 50px 45px black;
+    background-color: black;
+
+}
+
+.videocard {
+
+    width: 13.5vw;
+    height: 22vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: black;
+
+}
+
+.videocard:hover {
+    border-radius: 5px;
+    box-shadow: 0vw 0vw 1.5vw 0.5vw rgb(135, 135, 135);
+    border-style: ridge;
+    border-width: 0.3vw;
+    border-color: rgb(255, 255, 255);
+}
+
+
+.maintextbox {
+    z-index: 1;
+    font-family: "Audiowide", sans-serif;
+    position: fixed;
+    top: 17vw;
+    padding-left: 2vw;
+    letter-spacing: 2px;
+}
+
+.maintextboximage {
+    position: relative;
+    top: -3.5vw;
+    left: 2.3vw;
+    width: 2vw;
+}
+
+.mainvideotext3 {
+    font-family: sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: -0.9vw;
+    left: 5.7vw;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+
+
+}
+
+.mainvideotext1 {
+    font-weight: 600;
+    font-size: 5vw;
+
+}
+
+.mainvideotext2 {
+    font-weight: 600;
+    position: relative;
+    top: 2.5vw;
+    left: -7vw;
+    font-size: 1vw;
+
+}
+
+.mainvideobutton {
+    font-family: sans-serif;
+    cursor: pointer;
+    width: 12vw;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 795;
+    font-size: 1.3vw;
+    position: relative;
+    left: 3.3vw;
+    border-radius: 8px;
+    border-style: ridge;
+    border-width: 0.1vw;
+    border-color: white;
+
+}
+
+.mainvideobutton:hover {
+    background-color: rgba(0, 0, 0, 0.44);
+    border-width: 0.2vw;
+    box-shadow: 0vw 0vw 1.5vw 0.5vw rgb(135, 135, 135);
+
+}
+
+a {
+    text-decoration: none;
+}
